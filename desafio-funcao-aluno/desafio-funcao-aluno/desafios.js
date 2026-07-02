@@ -21,7 +21,7 @@
 /* TAREFA 1  [VEJA E PREVEJA]
    O código abaixo já funciona. Antes de rodar, complete a previsão. */
 function apresentar() {
-  console.log("Oi, eu sou uma função!");
+  console.log("Naruto > Dragon Ball");
 }
 apresentar();
 // PREVEJA (o que vai aparecer no console?):  _______________________
@@ -32,6 +32,11 @@ apresentar();
    a) Troque a mensagem da função 'apresentar' por outra à sua escolha.
    b) Logo abaixo, adicione mais DUAS chamadas: apresentar();
    Resultado esperado: sua mensagem aparece 3 vezes no total. */
+
+   apresentar();
+   apresentar();
+   apresentar();
+
 // >>> adicione as duas chamadas aqui <<<
 
 
@@ -39,6 +44,12 @@ apresentar();
    Crie uma função chamada 'meuNome' que escreve o SEU nome no console.
    Depois CHAME ela.
    Resultado esperado: seu nome aparece uma vez. */
+
+   function meuNome(){
+      console.log('Meu nome é Matheus!!');
+   }
+
+   meuNome();
 // >>> sua resposta da TAREFA 3 <<<
 
 
@@ -51,13 +62,17 @@ function saudar(nome) {
   console.log("Olá, " + nome + "!");
 }
 saudar("Maria");
-// PREVEJA:  _______________________
+
+// PREVEJA:  // Olá, Maria!!
 // Resultado esperado: Olá, Maria!
 
 
 /* TAREFA 5  [MODIFIQUE]
    Chame 'saudar' com o SEU nome e depois com o de um colega (2 chamadas).
    Resultado esperado: duas linhas "Olá, ...". */
+
+   saudar('Matheus');
+   saudar('Luan');
 // >>> suas duas chamadas aqui <<<
 
 
@@ -68,6 +83,13 @@ saudar("Maria");
        function soma2(a, b) { console.log(a + b); }
        soma2(2, 3);
    Resultado esperado (exemplo): Ana tem 22 anos */
+
+   function apresentarPessoa(nome,idade){
+      console.log('Meu nome é ' + nome + ' e tenho ' + idade + ' anos');
+   }
+
+   apresentarPessoa('Matheus', 24);
+
 // >>> sua resposta da TAREFA 6 <<<
 
 
@@ -82,7 +104,7 @@ function dobro(n) {
 }
 let r = dobro(5);
 console.log(r);
-// PREVEJA o valor de r:  _______________________
+// PREVEJA o valor de r:  10
 // Resultado esperado: 10
 
 
@@ -102,12 +124,27 @@ console.log("a =", a, "| b =", b);
    Crie logo abaixo uma cópia de 'dobro' chamada 'triplo' que retorna n*3.
    Guarde triplo(10) numa variável e mostre.
    Resultado esperado: 30 */
+
+   function triplo(n){
+      return n * 3;
+   }
+
+   let resultado = triplo(10);
+   console.log(resultado); 
+
 // >>> sua resposta da TAREFA 9 <<<
 
 
 /* TAREFA 10  [CRIE]
    Crie 'somar' que recebe a e b e RETORNA a soma. Mostre somar(3, 4).
    Resultado esperado: 7 */
+
+   function somar(a,b){
+      return a + b;
+   }
+
+   console.log(somar(10,22));
+
 // >>> sua resposta da TAREFA 10 <<<
 
 
@@ -118,6 +155,11 @@ console.log("a =", a, "| b =", b);
    Usando a sua função 'somar' da tarefa 10, mostre TRÊS contas:
    1+1, 10+5 e 100+23.
    Resultado esperado: 2, depois 15, depois 123 */
+
+   console.log(somar(1,1));
+   console.log(somar(10,5));
+   console.log(somar(100,23));
+
 // >>> sua resposta da TAREFA 11 <<<
 
 
@@ -125,6 +167,15 @@ console.log("a =", a, "| b =", b);
    Crie 'precoComDesconto' que recebe um preço e RETORNA o preço com
    10% de desconto (preco * 0.9). Use para 3 produtos: 100, 50 e 20.
    Resultado esperado: 90, 45, 18 */
+
+   function precoComDesconto(preco){
+      return preco * 0.9;
+   }
+
+   console.log(precoComDesconto(100));
+   console.log(precoComDesconto(50));
+   console.log(precoComDesconto(20));
+
 // >>> sua resposta da TAREFA 12 <<<
 
 
